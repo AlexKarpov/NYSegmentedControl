@@ -10,23 +10,12 @@
     self = [super initWithFrame:frame];
     if (self) {
         self.layer.masksToBounds = YES;
-        self.drawsGradientBackground = NO;
         self.opaque = NO;
         self.cornerRadius = 4.0f;
         self.borderColor = [UIColor lightGrayColor];
         self.borderWidth = 1.0f;
     }
     return self;
-}
-
-- (void)drawRect:(CGRect)rect {
-    if (self.drawsGradientBackground) {
-        CAGradientLayer *gradientLayer = (CAGradientLayer *)self.layer;
-        gradientLayer.colors = @[(__bridge id)[self.gradientTopColor CGColor],
-                                 (__bridge id)[self.gradientBottomColor CGColor]];
-    } else {
-        self.layer.backgroundColor = [self.backgroundColor CGColor];
-    }
 }
 
 #pragma mark - Getters and Setters
