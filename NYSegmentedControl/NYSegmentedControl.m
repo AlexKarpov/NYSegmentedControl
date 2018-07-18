@@ -6,7 +6,6 @@
 @interface NYSegmentedControl ()
 
 @property (nonatomic) NSArray<NYSegment *> *segments;
-@property (nonatomic) NYSegmentIndicator *selectedSegmentIndicator;
 @property (nonatomic, getter=isAnimating) BOOL animating;
 
 - (void)moveSelectedSegmentIndicatorToSegmentAtIndex:(NSUInteger)index animated:(BOOL)animated;

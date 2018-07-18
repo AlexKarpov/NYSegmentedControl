@@ -13,6 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NYSegmentedControl : UIControl
 
+@property (nonatomic) NYSegmentIndicator *selectedSegmentIndicator;
+
 /**
  The segmented control's data source object.
  */
