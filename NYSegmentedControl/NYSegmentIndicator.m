@@ -13,8 +13,6 @@
         self.drawsGradientBackground = NO;
         self.opaque = NO;
         self.cornerRadius = 4.0f;
-        self.gradientTopColor = [UIColor colorWithRed:0.27f green:0.54f blue:0.21f alpha:1.0f];
-        self.gradientBottomColor = [UIColor colorWithRed:0.22f green:0.43f blue:0.16f alpha:1.0f];
         self.borderColor = [UIColor lightGrayColor];
         self.borderWidth = 1.0f;
     }
