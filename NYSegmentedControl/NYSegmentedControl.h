@@ -3,6 +3,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @class NYSegmentedControl;
+@class NYSegmentIndicator;
 
 @protocol NYSegmentedControlDataSource <NSObject>
 
